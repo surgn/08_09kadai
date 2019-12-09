@@ -1,0 +1,1273 @@
+<!--  -->
+<!--  -->
+<!-- <!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="/20/pc/resources/js/lib/jquery-20190227075249.js"></script>
+
+<script type="text/javascript">
+
+var tmpDisplayMode = 'd';
+
+if (false) {
+  
+  tmpDisplayMode = 'm';
+}
+
+var tmpPageType = 'other';
+var tmpCorpId = '';
+var tmpOptNo = '';
+var tmpEntryType = '';
+var tmpRegistType = '';
+
+
+    tmpPageType = 'corpinfo';
+    tmpCorpId = '2';
+    tmpOptNo = '';
+    tmpEntryType = '';
+    tmpRegistType = '';
+  
+	var gGTagMngPrams = {
+	        pageType : tmpPageType,
+	        displayMode : tmpDisplayMode,
+	        corpId : tmpCorpId,
+	        optNo : tmpOptNo,
+	        entryType : tmpEntryType,
+	        registType : tmpRegistType,
+	        memberId : '',
+	        memDraft : '',
+	        memAddr : '',
+	        memVacAddr : '',
+	        memIndustry : [''],
+	        memOccupation : [''],
+	        memWorkAddr : [''],
+	        memCourseCtg : '',
+	        memUniversity : '',
+	        memUnivFacl : '',
+	        memUnivDept : '',
+	        memUnivType : '',
+	        memUnivDeptCtg : '',
+	        memUnivCtg : '',
+	        memCrpTypeCtg : [''],
+	        memCrpScaleCtg : '',
+	        memQualifyCtg : [''],
+	        memLangAbilityCtg : [''],
+	        memExperienceCtg : [''],
+	        memPriorityPoint : '',
+	        memBookMark : '',
+	        memEntryPre : '',
+	        memSemEntryPre : '',
+	        memEntryHon : '',
+	        memSemEntryHon : '',
+	        memRegistType : '',
+	        memGraduateCtg:'',
+	        memNewGraduateInfo:'',
+	        memFemaleMemInfo:'',
+	        memForeignStudentInfo:'',
+	        memEventEntryPre:'',
+	        memEventEntryHon:'',
+	        memChallengedInfo : '',
+	        memExcludeOtherUnentRegNum : '',
+	        memExcludeOtherEntNum : '',
+	        memOtherEntryPre100 : '',
+	        memOtherEntryHon100 : '',
+	        memOtherEntryPre110 : '',
+	        memOtherEntryHon110 : '',
+	        memOtherEntryPre120 : '',
+	        memOtherEntryHon120 : '',
+	        memOtherEntryPre130 : '',
+	        memOtherEntryHon130 : '',
+	        memOtherEntryPre140 : '',
+	        memOtherEntryHon140 : '',
+	        memOtherEntryPre150 : '',
+	        memOtherEntryHon150 : '',
+	        memOtherEntryPre160 : '',
+	        memOtherEntryHon160 : '',
+	        memOtherEntryPre170 : '',
+	        memOtherEntryHon170 : '',
+	        memOtherEntryPre180 : '',
+	        memOtherEntryHon180 : '',
+	        memOtherEntryPre190 : '',
+	        memOtherEntryHon190 : '',
+	        memOtherEntryPre200 : '',
+	        memOtherEntryHon200 : '',
+	        memOtherEntryPre210 : '',
+	        memOtherEntryHon210 : '',
+	        memOtherEntryPre220 : '',
+	        memOtherEntryHon220 : '',
+	        memOtherEntryPre230 : '',
+	        memOtherEntryHon230 : '',
+	        memOtherEntryPre240 : '',
+	        memOtherEntryHon240 : '',
+	        memOtherEntryPre250 : '',
+	        memOtherEntryHon250 : '',
+	        memOtherEntryPre260 : '',
+	        memOtherEntryHon260 : '',
+	        memOtherEntryPre270 : '',
+	        memOtherEntryHon270 : '',
+	        memOtherEntryPre280 : '',
+	        memOtherEntryHon280 : '',
+	        memOtherEntryPre290 : '',
+	        memOtherEntryHon290 : '',
+	        memReserveListNum : '',
+	        memModalDispFlg : ''
+	    };
+
+
+var dataLayer = [gGTagMngPrams];
+
+</script>
+<script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var encryptedMemberId = "";
+  if(encryptedMemberId != "") {
+    ga('create', 'UA-15744888-5', 'mynavi.jp', {'userId' : encryptedMemberId });
+    ga('set', 'dimension50', encryptedMemberId);
+    
+    var defaultNum = 51;
+    for(var key in gGTagMngPrams) {
+        var strCust = "dimension"+defaultNum;
+        ga('set', strCust, gGTagMngPrams[key])
+        defaultNum=defaultNum+1;
+    }
+    
+  } else {
+    ga('create', 'UA-15744888-5', 'mynavi.jp');
+    ga('set', 'dimension51', gGTagMngPrams['pageType']);
+    ga('set', 'dimension52', gGTagMngPrams['displayMode']);
+  }
+
+  //cidの取得
+  ga(function() {
+      var trackers = ga.getAll(); // ga のトラッカーオブジェクト取得
+      var i, len;
+      for (i = 0, len = trackers.length; i < len; i += 1) {
+      // 該当のプロパティIDをループで見つける
+          if (trackers[i].get('trackingId') === 'UA-15744888-5') {
+          var cid = trackers[i].get('clientId'); // cid 取得
+          break;
+          }
+      }
+      ga('set', 'dimension6', navigator.userAgent);
+      if(cid != ""){
+          ga('set', 'dimension26', cid);
+      }
+  });
+
+//ADPLAN cookieの取得
+  ga('set', 'dimension8', (function () {
+    var uid = undefined;
+    var allCookie = document.cookie;
+    try {
+      if (allCookie.indexOf('_adp_uid=') > -1) {
+        var list = allCookie.split('; ');
+        for (var i = 0; i < list.length; i++) {
+          var cookie = list[i];
+          var p = cookie.split('=');
+          var name = p[0];
+          var value = p[1];
+          if (name === '_adp_uid') {
+            uid = decodeURIComponent(value);
+            break;
+          }
+        }
+      }
+    } catch (e) { }
+    return uid;
+  })());
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+try{
+  var smartPhoneDefaultCssPath = "/20/pc/resources/css/smartphone-20190305165721.css";
+  var smartPhoneCssPath = smartPhoneDefaultCssPath.substr(0,smartPhoneDefaultCssPath.lastIndexOf("/")+1);
+  var staticpath = smartPhoneCssPath ;
+} catch(e) {
+
+}
+</script>
+
+<script type="text/javascript" src="/20/pc/resources/js/submit-20190227075249.js"></script>
+<script type="text/javascript" src="/20/pc/resources/js/stuCommon-20190227075249.js"></script>
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="Description" content="日本生命保険相互会社の会社概要ページです。マイナビ2020は、日本生命保険相互会社の採用情報や企業情報で、就職活動をサポートします。">
+				<meta name="keywords" content="日本生命保険相互会社,会社概要,新卒採用,就職活動,就活,エントリー,人事,マイナビ,マイナビ2020">
+				<script type="text/javascript" src="//d.rcmd.jp/job.mynavi.jp/2020/recommend.js" charset="UTF-8"></script>
+				<meta name="ROBOTS" content="NOARCHIVE">
+	<meta name="GOOGLEBOT" content="NOARCHIVE">
+<title>日本生命保険相互会社の新卒採用・会社概要 | マイナビ2020</title><script type="text/javascript" src="/20/pc/resources/js/lib/jquery.matchHeight-20190227075249.js"></script>
+<script type="text/javascript" src="/20/pc/resources/js/design/common/run-20190227182534.js"></script>
+<script type="text/javascript" src="/20/pc/resources/js/design/common/tooltip-20190227075249.js"></script>
+<script type="text/javascript">
+var clientwidth = "device-width";
+</script>
+<link rel="stylesheet" type="text/css" href="/20/pc/resources/css/pc-20190531235413.css" />
+<script type="text/javascript" src="/20/pc/resources/js/lib/jquery.cookie-20190227075249.js"></script>
+</head>
+<body id="companyDetail">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZZVFJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZZVFJ');</script>
+<!-- End Google Tag Manager -->
+<div id="wrapper">
+	<div id="headerWrap">
+		<div id="top"></div>
+<script type="text/javascript" src="/20/pc/resources/js/corpinfo-20190227075249.js"></script>
+<script type="text/javascript" src="/20/pc/resources/js/extend-20190227075249.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	init();
+ });
+</script>
+<script type="text/javascript" src="/20/pc/resources/js/system/user/sys_asynchronousRegistBookmark-20190227075249.js"></script>
+<script type="text/javascript">
+    
+    var STU_OPEN_AND_SHUT_CORP_CATEGORY_LINK_COOKIE = "mynavi2020_crp_head_foot_link";
+    var STU_OPEN_AND_SHUT_CORP_CATEGORY_LINK_COOKIE_EXPIRATION_DATE = "120";
+    var COM_ENVIRONMENT_CONTEXT_PATH_NS = "/20/pc";
+    var isMobileView = "false";
+</script>
+<script type="text/javascript" src="/20/pc/resources/js/system/common/sys_corpInfoHeader-20190227075249.js"></script>
+
+<div class="subpagePnation corp upper">
+            <div class="inner">
+                <ul class="leftRight">
+                    <li id="back" style="visibility:hidden" class="left"><a href="javascript:newCorp(2, &#39;back&#39;)">前の企業</a></li>
+                    <li id="next" style="visibility:hidden" class="right"><a href="javascript:newCorp(2, &#39;next&#39;)">次の企業</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div id="headerCorp">
+        <p class="update" id="updateDate">最終更新日：2019/3/27</p>
+            <p><a href="https://job.mynavi.jp/20/pc/"><img src="/20/pc/resources/images/share/logo_01-20190227075250.svg" alt="マイナビ2020" class="header-logo"></img></a></p>
+                    </div>
+
+    <div id="companyHead" class="group"><div class="heading1">
+            <div class="typeId">
+               <ul>
+                        <li><span>正社員</span></li><li><span>既卒可</span></li></ul>
+                </div>
+            <h1>日本生命保険相互会社</h1>
+            <ul class="labelList01">
+                </ul>
+        </div>
+        <div class="heading2 pcOnly">
+            <div class="category">
+                <ul>
+                        <li><span class="noLink">生命保険</span></li>
+                        </ul>
+                </div>
+            <div class="place">
+                <dl>
+                        <dt>本社</dt><dd>
+                        大阪府</dd>
+                    </dl>
+                <dl>
+                            <dt>総資産</dt><dd>66兆4726億円（2018年3月末）</dd>
+                        </dl>
+                    <dl>
+                            <dt>保険料等収入</dt><dd>4兆4,884億円（2018年3月末）</dd>
+                        </dl>
+                    <dl>
+                            <dt>従業員数</dt><dd>71871名  &rArr;内務職員 19515名（2018年3月末）</dd>
+                        </dl>
+                    <dl>
+                            <dt>募集人数</dt><dd>301名～</dd>
+                        </dl>
+                    </div>
+        </div>        <div class="heading2 spOnly">
+            <ul class="items">
+                <li>
+                        <span class="title">業種</span>
+                        <span class="text">
+                            生命保険</span>
+                    </li>
+                <li>
+                        <span class="title">本社</span>
+                        <span class="text">
+                            大阪府</span>
+                    </li>
+                <li>
+                        <span class="title">総資産</span>
+                        <span class="text">66兆4726億円（2018年3月末）</span>
+                    </li>
+                <li>
+                        <span class="title">保険料等収入</span>
+                        <span class="text">4兆4,884億円（2018年3月末）</span>
+                    </li>
+                <li>
+                        <span class="title">従業員数</span>
+                        <span class="text">71871名  &rArr;内務職員 19515名（2018年3月末）</span>
+                    </li>
+                <li>
+                        <span class="title">募集人数</span>
+                        <span class="text">301名～</span>
+                    </li>
+                </ul>
+        </div> </div>	<div class="basicInfoWrapper">
+            <table class="basicInfo" id="headerOptionLink">
+                <tr class="entry pcOnly" id ="upperEntryCtg" >
+    <th id ="upperEntryBtn" >
+                        <span>エントリー</span>
+                    </th>
+                <td>
+        <ul class="linkList">
+            <li>
+                                <a target="_blank" href="/20/pc/user/registOutsideEntry/index/?actionMode=rule&amp;corpId=2&amp;optNo=r7F7lA" id="entryLink0">プレエントリーはこちら</a></li>
+                        </ul>
+    </td>
+</tr>
+
+<tr class="more" id ="upperEntrySpecial">
+    <th id ="upperSpecialBtn">
+                <span>もっと伝えたい</span>
+            </th>
+        <td>
+    <ul class="linkList">
+    <li>
+                <a target="_blank" href="/20/pc/corpinfo/displayForwardOutsideUrl/doInitSpecialInfoUrl/?optNo=982948&amp;optPosn=1" id="specialLink0">日本生命SP情報</a></li>
+        </ul>
+    </td>
+</tr>
+
+</table>
+        </div>
+        <div class="basicInfoWrapper eventInfo">
+    <table class="basicInfo">
+        <tr class="link" id ="upperEntryConts">
+            <th id ="upperContsBtn"><span>お知らせ・イベント情報</span></th>
+                <td>
+                <ul class="linkList">
+                    <li>
+                                    <a href="/conts/2020/tok/nikkei/0301/jinji_message/58" target="_blank" id="contsLink0">日本経済新聞連動特集【人事担当者メッセージ】公開中！</a>
+                                </li>
+                            <li>
+                                    <a href="/conts/2020/j/?di=5896&dk=98ef" target="_blank" id="contsLink1">【E-BOOK】就活準備完全ガイド_お知らせリンク　広告</a>
+                                </li>
+                            <li>
+                                    <a href="/conts/2020/j/?di=4256&dk=966a" target="_blank" id="contsLink2">【E-BOOK】日本のリーディングカンパニー　取材</a>
+                                </li>
+                            <li>
+                                    <a href="/conts/2020/j/?di=4361&dk=5139" target="_blank" id="contsLink3">【E-BOOK】日本のリーディングカンパニー　広告</a>
+                                </li>
+                            <li>
+                                    <a href="/conts/2020/j/?di=2460&dk=7e63" target="_blank" id="contsLink4">【E-BOOK】企業研究＆ISガイド　広告</a>
+                                </li>
+                            <li>
+                                    <a href="/conts/2020/jump2/index.php?target=2" target="_blank" id="contsLink5">近日出展予定のマイナビイベント一覧</a>
+                                </li>
+                            </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="footerFixedEntries02" id="footerFixedEntries02">
+    <ul class="js-add-examination-list">
+        <li class="entry">
+                    <a href="/20/pc/corp2/list.html" id="doEntry" class="btn01 large em" onclick="javascript:MYNAVI.window.open(&#39;/20/pc/corp2/list.html&#39;,&#39;EntryWindow&#39;,MYNAVI.window.style.createObject(&#39;null&#39;, &#39;null&#39;, true, true, true, true, true, true, -1, -1));return false;"><span>エントリー</span>
+                            </a></li>
+            <li class="bookmark">
+                            <a href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=2" id="doBookmarkLink" class="btn-02 large js-add-examination-list-button" data-examination-list-corp-id="2">検討リストに登録
+                            </a></li>
+
+                    </ul>
+</div>
+
+
+<div id="localNaviWrap" class="localNaviWrap pcOnly">
+            <div id="localNavi">
+                <div class="inner">
+                    <div class="localNavi-list">
+                        <ul>
+                            <li class="is-current outline">
+                                    <span>会社概要</span>
+                                </li>
+                            <li class="employment">
+                                        <a href="/20/pc/search/corp2/employment.html" id="headerEmploymentTabLink">
+                                            採用データ
+                                        </a></li>
+                                <li class="article">
+                                        <a href="/20/pc/search/corp2/premium.html" id="headerPremiumTabLink">
+                                            取材・特集
+                                        </a></li>
+                                </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    <form id="stuCorpHeaderFooterDto" action="/corpinfo/displayOutline/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form><form id="stuCorpHeaderFooterDto" action="/corpinfo/displayEmployment/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form><form id="stuCorpHeaderFooterDto" action="/corpinfo/displayObogList/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><input id="obogNo" name="obogNo" type="hidden" value=""/><div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form><form id="stuCorpHeaderFooterDto" action="/corpinfo/displayPremium/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><input type="hidden" name="optNo" id="optNo" value=""/>
+        <div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form><form id="stuCorpHeaderFooterDto" action="/corpinfo/displayPremiumList/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form><form id="stuCorpHeaderFooterDto" action="/corpinfo/displayThemeList/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form><form id="stuCorpHeaderFooterDto" action="/corpinfo/displayTheme/index" method="post"><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="corpId" name="corpId" type="hidden" value="2"/><input id="answer" name="answer" type="hidden" value=""/><div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form></div>
+
+	<form id="displayOutlineForm" action="/20/pc/search/corp2/outline.html?func=PCtop" method="post"><input id="corpId" name="corpId" type="hidden" value="2"/><input id="disp" name="disp" type="hidden" value=""/><input id="mode" name="mode" type="hidden" value=""/><input id="primeDesignImgDispFlg" name="primeDesignImgDispFlg" type="hidden" value=""/><input id="primeDesignImgDispUrl" name="primeDesignImgDispUrl" type="hidden" value="/common/img20/prime_design/2_prime_design1670435_0001.jpg"/><input id="primeDesignImgUrl" name="primeDesignImgUrl" type="hidden" value="https://job.mynavi.jp/conts/n/sp/20/0000002_20nihonseimei/v02"/><div class="companyInfo">
+			<div class="mainImg pcOnly">
+				<a href="https://job.mynavi.jp/conts/n/sp/20/0000002_20nihonseimei/v02" id="primeDesignImgLink"><img src="https://job.mynavi.jp/common/img20/prime_design/2_prime_design1670435_0001.jpg"></img></a></div>
+		<h2 class="companyLead" id="corpCatch">ひらけ、世界。ひらけ、自分。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　  　　Support Every Life.</h2>
+			<div class="companyMessage premium">
+				<h2 id="corpMessageTitle">
+							エントリーの受付を開始しました！　日本生命／採用担当<span class="date" id="corpMessageDate"> （2019/03/01更新） </span>
+							</h2>
+						<div class="messageAreaWrapper">
+							<div class="messageArea" id="corpMessageBody">
+								<p>みなさん、こんにちは！日本生命／採用担当です。<br/>当社のエントリー受付を開始しました。<br/><br/>会社説明会等のご案内は、エントリーしていただいた方のマイページ「お返事箱」へ<br/>ご連絡させていただきます。<br/>興味のある方は、是非エントリーをお願いします！ <br/><br/></p>
+							</div>
+							</div>
+					</div>
+		<div class="companySec">
+				<h2 class="dtHead2">会社紹介記事</h2>
+					<div class="inner">
+						<table class="dataTable last has-bg">
+								<tr>
+									<td>
+										<div class="pct2c">
+											<dl class="box1">
+													<dt>
+														<img src="https://job.mynavi.jp/common/img20/advance/2-a1-1.jpg" alt="PHOTO"></img></dt>
+													<dd class="sameSize" id="advanceInfoCaptionLeft">丸の内オアゾにある東京本部ビル。東京駅からすぐという好立地。JRや地下鉄の出口と直結する地下には、来店型店舗「ニッセイライフプラザ丸の内」がある。</dd>
+													</dl>
+											<dl class="box2">
+													<dt>
+														<img src="https://job.mynavi.jp/common/img20/advance/2-a1-2.jpg" alt="PHOTO"></img></dt>
+													<dd class="sameSize" id="advanceInfoCaptionRight">生命保険業界のリーディングカンパニーとして、常に頂点のその先を見つめ、挑戦的な取組みを続けてきた日本生命。これからも日本経済を支え、日本をリードしていきます。</dd>
+													</dl>
+											</div>
+									</td>
+								</tr>
+							</table>
+							<h3 class="dtHead" id="advanceInfoTitle">ひらけ、世界。ひらけ、自分。        Support Every Life.</h3>
+						<table class="dataTable last">
+								<tbody>
+									<tr>
+										<td class="heading">
+												<div class="headingPictWrapper advance">
+													<p class="img">
+														<img src="https://job.mynavi.jp/common/img20/advance/2-a1-8.jpg" alt="PHOTO"></img></p>
+													<p class="txt">
+														<div id="coverageArticleCaption">全国187カ所、131万本を超える植樹や育樹には当社職員やその家族、地域の方々もボランティアとして参加し、環境意識の啓発にもつながっています。</div>
+														</p>
+												</div>
+											</td>
+										<td>
+											<p class="sameSize" id="advanceInfoBody">
+												■生命保険業界のリーディングカンパニーとしての地位に甘んじることなく、常にその先を見つめ、挑戦的な取組みを続ける企業でありたい。<br/><br/>■経済環境が厳しい時代だからこそ、金融生命保険業を通じて、日本を、そして世界をリードする企業でありたい。<br/><br/>■日本生命の採用コンセプト「ひらけ、世界。ひらけ、自分。Support Every Life」には上記のような想いが込められています。<br/><br/><br/>■生命保険会社は、幅広い業務分野でお客様ニーズに対応しています。多様な業務がありますから自分の個性を活かしつつ仕事を通して社会貢献できる。その大きなやりがいを実感しながら力を尽くしています。<br/><br/>◇リーテイル部門<br/>個人のお客様を中心に保険商品を販売するほか、約5万名もの全国の営業職員、銀行等の販売窓口、来店型店舗「ニッセイライフプラザ」といった販売チャネルのマネジメントも行います。販売チャネルを通していただいたお客様の声から商品開発セクションが保険商品を開発。企画販売セクションが練り上げた販売戦略に基づき営業職員が販売活動を行います。<br/><br/>◇ホールセール部門<br/>大手企業や官公庁といったお客様に、団体保険や団体年金を中心に、ニーズに合わせたカスタマイズ商品を提案。要望に応じて、融資などの財務取引、不動産事業など多岐にわたる業務も取り扱います。高度な提案力、コンサルティング力、長期的視野に基づいて、総合的なサービスを提供します。<br/><br/>◇資産運用部門<br/>約66兆円にものぼる総資産を長期にわたって確実に運用し、お客様に還元することが資産運用部門の使命です。財務企画部による資産運用全般に関する企画・立案に基づき、株式、債券、外国証券、融資、不動産といった各セクションが実際に運用します。<br/><br/>◇海外事業部門<br/>多様な収益機会を取込み、本業を強化する観点から、欧・米・豪・アジア計9カ国に15現地法人・４事業所を配し、保険事業、資産運用、調査、人材交流の４つの分野で海外に展開しています。 また、資産運用収益の向上と保険マーケットの成長機会を取込み、更には、両分野での先進ノウハウの習得を目的とし、欧・米・アジアのトップ企業等とのグローバルなネットワークの構築を進めています。</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				</div>
+		<div class="companySec entryBtns mynaviEntry">
+				<div class="inner js-add-examination-list">
+					<ul class="companyDetail">
+						<li class="nav01"><a target="_blank" href="/20/pc/corp2/list.html" id="doEntry" class="btn01 large em"><span>エントリー</span>
+							                </a></li>
+							<li class="nav01 Notice"><span id="doSeminar" class="btn01 large em hidden">説明会の日程情報なし</span></li>
+							<li class="bookmark"><a href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=2" id="doBookmark" class="btn02 large">検討リストに登録</a></li>
+									</ul>
+				</div>
+			</div>
+		<div class="companySec">
+				<h2 class="dtHead">会社データ</h2>
+				<div class="inner">
+					<table class="dataTable dataTable02 last">
+							<tr>
+													<td class="heading" id="corpDescDtoListDescTitle35">プロフィール</td>
+													<td class="sameSize">
+														<p id="corpDescDtoListDescText35">当社は、約1184万人の契約者数、約66兆円の総資産（いずれも当社単体2017年度末）等、世界でもトップクラスの水準を誇る、生命保険業界のリーディングカンパニーです。<br/>常に頂点のその先を見つめ、挑戦的な取組みを続けてきました。<br/>頂点に立つからこそ見える厳しい現実も受止め、金融機関としての絶対的な健全性や、それを支える豊富な人材で、１つひとつの問題に対して、信念を持ち、誠実に、そして確実に応えていきたい。我々はこれからも生命保険を通じた「安心」の提供はもちろん、最大級の機関投資家としても経済を支え、そして社会を支えていきます。</p>
+														</td>
+												</tr>
+											<tr>
+													<td class="heading" id="corpDescDtoListDescTitle100">事業内容<ul class="listIcon02">
+																</ul>
+														</td>
+													<td class="sameSize">
+														<div class="item" id="corpDescDtoListDescText100">個人および企業向け各種保険商品の引受・保全サービス、有価証券投資・貸付・不動産投資など受託資産の運用、付随業務</div>
+														</td>
+												</tr>
+											</table>
+					<table class="dataTable dataTable02 last">
+							<tr>
+													<th scope="row" id="corpDescDtoListDescTitle40">本社郵便番号</th>
+													<td class="sameSize" id="corpDescDtoListDescText40">541-8501</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle50">本社所在地</th>
+													<td class="sameSize" id="corpDescDtoListDescText50">大阪府大阪市中央区今橋3-5-12</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle220">本社電話番号</th>
+													<td class="sameSize" id="corpDescDtoListDescText220">06-6209-4500</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle60">本部郵便番号</th>
+													<td class="sameSize" id="corpDescDtoListDescText60">100-8288</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle70">本部所在地</th>
+													<td class="sameSize" id="corpDescDtoListDescText70">東京都千代田区丸の内1-6-6　日本生命丸の内ビル</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle240">創立</th>
+													<td class="sameSize" id="corpDescDtoListDescText240">1889年（明治22年）7月4日</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle250">基金・基金償却積立金</th>
+													<td class="sameSize" id="corpDescDtoListDescText250">1兆3500億円（2018年3月末）</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle260">総資産</th>
+													<td class="sameSize" id="corpDescDtoListDescText260">66兆4726億円（2018年3月末）</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle270">従業員数</th>
+													<td class="sameSize" id="corpDescDtoListDescText270">71871名  &rArr;内務職員 19515名（2018年3月末）</td>
+												</tr>
+											<tr>
+													<th scope="row" id="corpDescDtoListDescTitle300">保険料等収入</th>
+													<td class="sameSize" id="corpDescDtoListDescText300">4兆4,884億円（2018年3月末）</td>
+												</tr>
+											<tr>
+											<th scope="row" id="outlineInfoListDescTitle310">事業所</th>
+											<td class="sameSize" id="outlineInfoListDescText310">&lt;1&gt;国内<br/>支社108<br/>営業部1536<br/>ライフプラザ99<br/>代理店16563<br/>総合法人部36<br/><br/>&lt;2&gt;海外事務所<br/>（ニューヨーク・シカゴ・ボストン・ロンドン・フランクフルト・北京・上海・蘇州・シンガポール・バンコク・ムンバイ・ジャカルタ・メルボルン・シドニー等） <br/>9か国・14現地法人・4事務所 <br/>(2018年12月時点）</td>
+										</tr>
+										<tr>
+											<th scope="row" id="outlineInfoListDescTitle350">関連会社</th>
+											<td class="sameSize" id="outlineInfoListDescText350">国内保険　13社<br/>資産運用　50社<br/>海外保険　7社<br/>総務　　　12社<br/>（2019年1月時点)</td>
+										</tr>
+										<tr>
+														<th scope="row" id="historyTitle">沿革</th>
+														<td class="sameSize">
+															<ul class="listHistory">
+																<li><span class="year" id="historyInfoList0.descTitle"> 1889年</span>
+																			<ul>
+																				<li id="historyInfoList0.descText">有限責任日本生命保険会社創立</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList1.descTitle"> 1964年</span>
+																			<ul>
+																				<li id="historyInfoList1.descText">「ニッセイ名作劇場」開始</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList2.descTitle"> 1992年</span>
+																			<ul>
+																				<li id="historyInfoList2.descText">「ニッセイ100万本の植樹運動」開始</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList3.descTitle"> 1999年</span>
+																			<ul>
+																				<li id="historyInfoList3.descText">ニッセイ情報テクノロジー(株)設立</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList4.descTitle"> 2000年</span>
+																			<ul>
+																				<li id="historyInfoList4.descText">特別勘定運用部門を分社、ニッセイアセットマネジメント投信株式会社と統合して「ニッセイアセットマネジメント株式会社」と名称変更</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList5.descTitle"> 2001年</span>
+																			<ul>
+																				<li id="historyInfoList5.descText">同和火災海上保険株式会社、ニッセイ損害保険株式会社の2社が合併し、「ニッセイ同和損害保険(株)」誕生</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList6.descTitle"> 2002年</span>
+																			<ul>
+																				<li id="historyInfoList6.descText">「ニッセイ100万本の植樹運動」目標の100万本を達成</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList7.descTitle"> 2003年</span>
+																			<ul>
+																				<li id="historyInfoList7.descText">広電日生人寿保険有限公司設立</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList8.descTitle"> 2004年</span>
+																			<ul>
+																				<li id="historyInfoList8.descText">バンコクライフをグループ会社化<br/>東京本部を丸の内に移転</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList9.descTitle"> 2007年</span>
+																			<ul>
+																				<li id="historyInfoList9.descText">シンガポール事務所開設</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList10.descTitle"> 2008年</span>
+																			<ul>
+																				<li id="historyInfoList10.descText">ノースウェスタン・ミューチュアルと業務提携<br/>「ニッセイ名作劇場」観劇児童数700万名突破</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList11.descTitle"> 2009年</span>
+																			<ul>
+																				<li id="historyInfoList11.descText">創業120周年<br/>広電日生人寿保険有限公司の合弁パートナーを、中国長城資産管理公司に変更し、社名を長生人寿保険有限公司に変更</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList12.descTitle"> 2011年</span>
+																			<ul>
+																				<li id="historyInfoList12.descText">インド　リライアンス・ライフ社に資本参加し、関連会社化（2016年にリライアンス・ニッポンライフ・インシュアランスと改称）</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList13.descTitle"> 2012年</span>
+																			<ul>
+																				<li id="historyInfoList13.descText">「ニッセイみらいのカタチ」発売<br/>リライアンス・キャピタル・アセットマネジメント社に資本参加し、関連会社化（2016年にリライアンス・ニッポンライフ・アセットマネジメントと改称）<br/>米ドル建劣後特約付社債の発行</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList14.descTitle"> 2013年</span>
+																			<ul>
+																				<li id="historyInfoList14.descText">「ニッセイ学資保険」発売<br/>「ネクストロード」発売<br/>「夢のかたちプラス」発売</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList15.descTitle"> 2014年</span>
+																			<ul>
+																				<li id="historyInfoList15.descText">創業125周年<br/>セクイス・ライフ社に資本参加し、関連会社化</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList16.descTitle"> 2015年</span>
+																			<ul>
+																				<li id="historyInfoList16.descText">「みらいのカタチ 継続サポート3大疾病保障保険付プラン5つ星」発売<br/>株式会社ライフサロンを子会社化<br/>「ロングドリームGOLD」発売<br/>ニッセイリアルティマネジメント株式会社設立<br/>ライフプラザパートナーズを子会社化<br/><br/></li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList17.descTitle"> 2015年</span>
+																			<ul>
+																				<li id="historyInfoList17.descText">株式会社NTTドコモと事業提携<br/>豪州MLC生保事業の買収合意およびナショナルオーストラリア銀行とのパートナーシップ構築<br/>株式会社ライフプラザパートナーズへ出資し、グループ会社化<br/>三井生命保険株式会社※と経営統合<br/>※２０１９年４月より大樹生命保険株式会社に社名変更<br/></li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList18.descTitle"> 2016年</span>
+																			<ul>
+																				<li id="historyInfoList18.descText">「ラップドリーム」「デュアルドリーム」「グランエイジ」「シュシュ」発売<br/>豪州生命保険会社MLC limitedを子会社化</li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList19.descTitle"> 2017年</span>
+																			<ul>
+																				<li id="historyInfoList19.descText">中期経営計画「全・進-next stage](2017-2020)スタート<br/>「プラチナフェニックス」発売<br/>株式会社ほけんの110番を子会社化<br/>「もしものときの&hellip;生活費」発売<br/>「夢のプレゼント」発売<br/>The TCW Group,Inc.に資本参加し、関連会社化<br/></li>
+																			</ul></li>
+																	<li><span class="year" id="historyInfoList20.descTitle"> 2018年</span>
+																			<ul>
+																				<li id="historyInfoList20.descText">ニッセイ・ウェルネス生命保険株式会社※と経営統合<br/>※２０１９年１月よりマスミューチュアル生命保険株式会社から社名変更</li>
+																			</ul></li>
+																	</ul>
+														</td>
+													</tr>
+													<tr>
+																			<th scope="row" id="outlineAfterInfoListDescTitle630">平均勤続勤務年数</th>
+																			<td class="sameSize" id="outlineAfterInfoListDescText630">11.6年 (2017年度末・内勤職員) <br/>11.3年 (2016年度末・内勤職員) <br/>※内務職員とは、内務職員、医務職員、労務職員、エルダー職員、特別嘱託、得意先担当職員、特定職員、スタッフの合計です。<br/> <br/> </td>
+																		</tr>
+																	<tr>
+																			<th scope="row" id="outlineAfterInfoListDescTitle660">前年度の育児休業取得対象者数</th>
+																			<td class="sameSize" id="outlineAfterInfoListDescText660">【育児休業対象者数】2017年度<br/>　男性：247名<br/>　女性：370名<br/><br/><br/><br/></td>
+																		</tr>
+																	<tr>
+																			<th scope="row" id="outlineAfterInfoListDescTitle670">前年度の育児休業取得者数</th>
+																			<td class="sameSize" id="outlineAfterInfoListDescText670">【育児休業取得数】2017年度<br/>　男性：232名<br/>　女性：366名<br/><br/>※2013年度より当社は男性の育児休業100％の取得を推進しており、2017年度まで5年連続100％達成している。<br/>その対象職員は当年度末に育児休業の取得期限を迎える男性職員となっているため、当サイトに搭載している取得率の算定方法と異なる。</td>
+																		</tr>
+																	</table>
+															</div>
+															</div>
+														<div class="companySec entryBtns mynaviEntry">
+																<div class="inner js-add-examination-list">
+																	<ul class="companyDetail">
+																		<li class="nav01">
+																					<a target="_blank" href="/20/pc/corp2/list.html" id="doEntryData" class="btn01 large em"><span>エントリー</span>
+																							</a></li>
+																			<li class="nav01 Notice"><span id="doSeminar" class="btn01 large em hidden">説明会の日程情報なし</span></li>
+																			<li class="bookmark"><a href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=2" id="doBookmarkData" class="btn02 large">検討リストに登録</a></li>
+																					</ul>
+																</div>
+															</div>
+														<div class="companySec">
+															<div class="inner">
+																<div class="box01">
+																		<h2 class="hdg01" id="saiyouHeader">採用データ</h2>
+																		<div class="inner">
+																			<ul class="linkList">
+																				<li><a href="/20/pc/search/corp2/employment.html" id="saiyouLink">採用データはこちら</a></li>
+																				</ul>
+																		</div>
+																	</div>
+																<div class="box01" id="research">
+																		<h2 class="hdg01" id="premiumInfoHeader">取材情報</h2>
+																		<div class="inner">
+																			<div class="lytImage separate left">
+																				<div class="text">
+																					<dl class="profile">
+																						<dt id="premiumInfoPersonText">
+																							<a href="/20/pc/search/corp2/premium.html">日本生命の10年後、20年後を形作るために</a></dt>
+																						<dd id="premiumInfoPersonTitle">5万人に影響を及ぼす、責任ある仕事</dd>
+																					</dl>
+																				</div>
+																				<div class="image">
+																						<a href="/20/pc/search/corp2/premium.html" id="premiumInfoAttentionImgLink"><img src="https://job.mynavi.jp/common/img20/premium_mode/2-sa28359-13.jpg" alt="PHOTO"></img></a></div>
+																				</div>
+																		</div>
+																	</div>
+																</div>
+														</div>
+														<div class="companySec">
+																<h2 class="dtHead">問い合わせ先</h2>
+																<div class="inner">
+																	<table class="dataTable last dataTable02">
+																		<tr>
+																								<th scope="row" id="corpDescDtoListDescTitle110">問い合わせ先</th>
+																								<td class="sameSize" id="corpDescDtoListDescText110">【採用データ画面】<br/>『採用問い合わせ先1・2』をご覧ください。</td>
+																								</tr>
+																						<tr>
+																								<th scope="row" id="corpDescDtoListDescTitle120">URL</th>
+																								<td class="sameSize" id="corpDescDtoListDescText120">https://www.nissay-saiyo.com/</td>
+																								</tr>
+																						<tr>
+																			<th scope="row">QRコード</th>
+																			<td class="sameSize">
+																				<dl class="qrcode">
+																					<dt>
+																						<img src="https://job.mynavi.jp/common/img20/qrcode/qr2.gif" alt="QRコード" height="135" width="135"></img></dt>
+																					<dd>https://job.mynavi.jp/20/pc/search/corp2/outline.html<br>
+																						
+																							外出先やちょっとした空き時間に、スマートフォンでマイナビを見てみよう！
+																						</dd>
+																				</dl>
+																			</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														<div class="companySec entryBtns mynaviEntry">
+																<div class="inner js-add-examination-list">
+																	<ul class="companyDetail">
+																		<li class="nav01"><a target="_blank" href="/20/pc/corp2/list.html" id="doEntryInquiry" class="btn01 large em"><span>エントリー</span>
+																							</a></li>
+																			<li class="nav01 Notice"><span id="doSeminar" class="btn01 large em hidden">説明会の日程情報なし</span></li>
+																			<li class="bookmark"><a href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=2" id="doBookmarkInquiry" class="btn02 large">検討リストに登録</a></li>
+																					</ul>
+																</div>
+															</div>
+														</div>
+														<div id="footerWrap">
+
+															<div id="localNaviWrap" class="pcOnly">
+            <div id="localNavi">
+            <div class="inner">
+            <div class="localNavi-list bottom">
+                <ul>
+                    <li class="is-current outline">
+                            <span>会社概要</span>
+                        </li>
+                    <li class="employment">
+                                <a href="/20/pc/search/corp2/employment.html" id="footerEmploymentTabLink">
+                                                                採用データ
+                                </a></li>
+                        <li class="article">
+                                <a href="/20/pc/search/corp2/premium.html" id="footerPremiumTabLink">
+                                                                取材・特集
+                                </a></li>
+                        </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+        <div id="boxRelatedLinksTop" class="recomend">
+																		<dl>
+																			<dt id="descText">
+																				<em>日本生命保険相互会社</em>と業種や本社が同じ企業を探す。
+																			</dt>
+																			<dd>
+																				<table class="recomendInner">
+																					<tbody>
+																						<tr>
+																							<td class="btnLink"><span class="each"><a href="/20/pc/search/query.html?ID:74000/LIDM:1/func=corpFooter" id="detailIndLink">生命保険</a></span>
+																									<span class="each"><a href="/20/pc/search/query.html?HR:27/func=corpFooter" id="hqLink">大阪府</a></span>
+																									</td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</dd>
+																		</dl>
+																	</div>
+																<div class="recomend">
+		<dl>
+			<dt>
+				<em>日本生命保険相互会社</em>を志望している他のマイナビ会員は、このような企業も志望しています。
+			</dt>
+			<dd>
+				<ul class="linkList split intent">
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp85586/outline.html?func=corpinfo" id="rcmdInfoList0.rcmdCorpNameLink">ディップ(株)【東証一部上場／バイトル・はたらこねっと】</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp85586/outline.html?func=corpinfo" id="rcmdInfoList0.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/85586-a1-4.jpg" alt="ディップ(株)【東証一部上場／バイトル・はたらこねっと】"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									マスコミ（出版・広告）</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=85586" id="rcmdInfoList0.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp17/outline.html?func=corpinfo" id="rcmdInfoList1.rcmdCorpNameLink">朝日生命保険相互会社</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp17/outline.html?func=corpinfo" id="rcmdInfoList1.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/17-a1-4.jpg" alt="朝日生命保険相互会社"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									生保・損保</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=17" id="rcmdInfoList1.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp77821/outline.html?func=corpinfo" id="rcmdInfoList2.rcmdCorpNameLink">日本郵政グループ（日本郵便(株)、(株)ゆうちょ銀行、(株)かんぽ生命保険）</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp77821/outline.html?func=corpinfo" id="rcmdInfoList2.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/77821-a1-4.jpg" alt="日本郵政グループ（日本郵便(株)、(株)ゆうちょ銀行、(株)かんぽ生命保険）"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									銀行・証券</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=77821" id="rcmdInfoList2.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp547/outline.html?func=corpinfo" id="rcmdInfoList3.rcmdCorpNameLink">(株)大塚商会【東証一部上場】</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp547/outline.html?func=corpinfo" id="rcmdInfoList3.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/547-a1-4_0003.jpg" alt="(株)大塚商会【東証一部上場】"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									ソフトウエア・情報処理・ネット関連</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=547" id="rcmdInfoList3.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp105/outline.html?func=corpinfo" id="rcmdInfoList4.rcmdCorpNameLink">損害保険ジャパン日本興亜(株)</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp105/outline.html?func=corpinfo" id="rcmdInfoList4.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/105-a1-4_0001.jpg" alt="損害保険ジャパン日本興亜(株)"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									生保・損保</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=105" id="rcmdInfoList4.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp24/outline.html?func=corpinfo" id="rcmdInfoList5.rcmdCorpNameLink">大樹生命保険(株)【旧社名：三井生命保険(株)】</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp24/outline.html?func=corpinfo" id="rcmdInfoList5.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/24-a1-4_0001.jpg" alt="大樹生命保険(株)【旧社名：三井生命保険(株)】"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									生保・損保</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=24" id="rcmdInfoList5.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp121/outline.html?func=corpinfo" id="rcmdInfoList6.rcmdCorpNameLink">ＳＭＢＣ日興証券(株)</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp121/outline.html?func=corpinfo" id="rcmdInfoList6.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/121-a1-4.jpg" alt="ＳＭＢＣ日興証券(株)"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									銀行・証券</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=121" id="rcmdInfoList6.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp103405/outline.html?func=corpinfo" id="rcmdInfoList7.rcmdCorpNameLink">損保ジャパン日本興亜ひまわり生命保険(株)</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp103405/outline.html?func=corpinfo" id="rcmdInfoList7.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/103405-a1-4.jpg" alt="損保ジャパン日本興亜ひまわり生命保険(株)"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									生保・損保</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=103405" id="rcmdInfoList7.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp106320/outline.html?func=corpinfo" id="rcmdInfoList8.rcmdCorpNameLink">楽天カード(株)</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp106320/outline.html?func=corpinfo" id="rcmdInfoList8.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/106320-a1-4_0001.jpg" alt="楽天カード(株)"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									クレジット・信販・リース・その他金融</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都
+										、福岡県</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=106320" id="rcmdInfoList8.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						<li class="label js-add-examination-list">
+							<div class="lytImage separate right">
+								<div class="text js-add-examination-list-text">
+									<a href="/20/pc/search/corp58237/outline.html?func=corpinfo" id="rcmdInfoList9.rcmdCorpNameLink">(株)三井住友銀行</a></div>
+								<div class="image">
+									<a href="/20/pc/search/corp58237/outline.html?func=corpinfo" id="rcmdInfoList9.corpImageLink"><img src="https://job.mynavi.jp/common/img20/advance/58237-a1-4_0001.jpg" alt="(株)三井住友銀行"></img></a></div>
+							</div>
+							<dl class="linkCategory">
+								<dt>業種</dt>
+								<dd>
+									銀行・証券</dd>
+								<dt>本社</dt>
+								<dd>
+									東京都</dd>
+							</dl>
+							<div class="btnWrapper">
+									<ul class="listBtn01">
+										<li class="bookmark">
+												<a target="_blank" href="/20/pc/user/registBookmark/index?opttype=bookmark&amp;corpId=58237" id="rcmdInfoList9.visitorRegistBookmarkList" class="btn-02 large preventDouble">検討リストに登録</a></li>
+											</ul>
+								</div>
+							</li>
+						</dd>
+		</dl>
+		<div class="sub appHidden">
+				<p class="aright">
+					<a href="/20/pc/user/displayRecommendCorpList/index/?corpId=2&amp;patternId=1" id="moreInfo" class="link01">もっと見る</a></p>
+			</div>
+		</div>
+<div id="boxRelatedLinksBottom" class="recomend appHidden">
+																			<dl>
+																				<dt id="crpFeatureCtgListCorpDispText">
+																					<em>日本生命保険相互会社</em>と特徴・特色が同じ企業を探す。
+																				</dt>
+																				<dd>
+																					<table class="recomendInner">
+																						<tr>
+																							<td class="btnLink">
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1840/func=corpFooter" id="crpFeatureCtgList.link">福利厚生が充実</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1850/func=corpFooter" id="crpFeatureCtgList.link">ジョブローテーションで様々な職種を体験できる</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1860/func=corpFooter" id="crpFeatureCtgList.link">教育・研修制度が充実</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1870/func=corpFooter" id="crpFeatureCtgList.link">資格取得支援制度あり</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1890/func=corpFooter" id="crpFeatureCtgList.link">時短勤務制度あり</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1900/func=corpFooter" id="crpFeatureCtgList.link">産休・育児休暇取得実績あり</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1920/func=corpFooter" id="crpFeatureCtgList.link">完全週休2日制</a></span>
+																								<span class="each"><a href="/20/pc/search/query.html?FE:1930/func=corpFooter" id="crpFeatureCtgList.link">社宅・家賃補助制度あり</a></span>
+																								</td>
+																						</tr>
+																					</table>
+																				</dd>
+																			</dl>
+																		</div>
+																	<script type="text/javascript">
+
+Date.prototype.Format = function (fmt) {
+    var o = {
+        "M+": this.getMonth() + 1, //月
+        "D+": this.getDate(), //日
+        "h+": this.getHours(), //時
+        "m+": this.getMinutes(), //分
+        "s+": this.getSeconds(), //秒
+    };
+    if (/(Y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+}
+
+
+function doSendMail () {
+     // タイトル
+     var subjecttext =  document.getElementById("corpName").value + " - マイナビ" +  document.getElementById("serviceName").value;
+     // 本文
+     var bodytext = document.getElementById("corpName").value + '\n';
+     var url = document.getElementById("url").value;
+     var pattern = document.getElementById("screenPattern").value;
+     var week = ["Su","Mo","Tu","We","Th","Fr","Sa"];
+     var sysDate = new Date();
+     var day = week[sysDate.getDay()];
+     var utm_source = "utm_source=mailCorp";
+     var utm_medium = "&utm_medium=" + document.getElementById("mode").value + day;
+     var utm_campaign = "&utm_campaign=" + sysDate.Format("YYYYMMDD") + "Corp" + document.getElementById("corpIdMail").value;
+     bodytext = bodytext + url + pattern  + utm_source + utm_medium + utm_campaign;
+     var hleftext = 'subject=' + encodeURIComponent(subjecttext) + '&body=' + encodeURIComponent(bodytext);
+     location.href='mailto:?' + hleftext;
+        }
+</script>
+<input type="hidden" id="url" name="url" value="https://job.mynavi.jp">
+<input type="hidden" id="corpIdMail" name="corpIdMail" value="2">
+<input type="hidden" id="corpName" name="corpName" value="日本生命保険相互会社">
+<input type="hidden" id="serviceName" name="serviceName" value="2020">
+<input type="hidden" id="mode" name="mode" value="pc">
+    <input type="hidden" id="screenPattern" name="screenPattern" value="/20/pc/search/corp2/outline.html?">
+    <p class="toPagetop">
+    <a href="#top">ページTOPへ</a>
+</p>
+<div class="subpagePnation corp bottom">
+            <div class="inner">
+                <ul class="leftRight">
+                    <li id="back2" style="visibility:hidden" class="left"><a href="javascript:newCorp(2, &#39;back&#39;)">前の企業</a></li>
+                    <li class="searchTop"><a href="/20/pc/corpinfo/displayCorpSearch/index/" id="searchLink"><span>企業検索トップ</span></a></li>
+                    <li id="next2" style="visibility:hidden" class="right"><a href="javascript:newCorp(2, &#39;next&#39;)">次の企業</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+														<div>
+<input type="hidden" name="_csrf" value="9f8a44f1-18c9-4606-a724-bc8a63f1c1d6" />
+</div></form></div>
+
+														<div id="footer">
+															<address>Copyright &copy; Mynavi Corporation</address>
+														</div>
+														<!-- aICrawlingData -->
+															<script type="application/json" id="aICrawlingData">
+  {
+      "corpId"            : "2",
+      "corpName"          : "日本生命保険相互会社",
+      "industry"          : "生命保険",
+      "srchHqAddrKey"     : "大阪府",
+      "srchWorkAddrKey"   : "北海道/青森県/岩手県/宮城県/秋田県/山形県/福島県/茨城県/栃木県/群馬県/埼玉県/千葉県/東京都/神奈川県/新潟県/富山県/石川県/福井県/山梨県/長野県/岐阜県/静岡県/愛知県/三重県/滋賀県/京都府/大阪府/兵庫県/奈良県/和歌山県/鳥取県/島根県/岡山県/広島県/山口県/徳島県/香川県/愛媛県/高知県/福岡県/佐賀県/長崎県/熊本県/大分県/宮崎県/鹿児島県/沖縄県/海外",
+      "srchOccupationKey" : "総務・人事・労務/経理・財務・会計/宣伝・広報/調査研究・マーケティング/経営企画/法務・特許・審査/営業(個人向け新規開拓メイン)/営業(個人向け既存顧客メイン)/営業(法人向け新規開拓メイン)/営業(法人向け既存顧客メイン)/企画・商品開発/営業推進・販売促進/販売スタッフ・接客/為替ディーラー・トレーダー/融資・資産運用マネージャー/証券アナリスト/アクチュアリー/ファイナンシャルアドバイザー/ネットワークエンジニア/システム保守運用",
+      "corpCatch"         : "ひらけ、世界。ひらけ、自分。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　  　　Support Every Life.",
+      "advanceInfoTitle"  : "ひらけ、世界。ひらけ、自分。        Support Every Life.",
+      "advanceInfoBody"   : "■生命保険業界のリーディングカンパニーとしての地位に甘んじることなく、常にその先を見つめ、挑戦的な取組みを続ける企業でありたい。\r\n\r\n■経済環境が厳しい時代だからこそ、金融生命保険業を通じて、日本を、そして世界をリードする企業でありたい。\r\n\r\n■日本生命の採用コンセプト「ひらけ、世界。ひらけ、自分。Support Every Life」には上記のような想いが込められています。\r\n\r\n\r\n■生命保険会社は、幅広い業務分野でお客様ニーズに対応しています。多様な業務がありますから自分の個性を活かしつつ仕事を通して社会貢献できる。その大きなやりがいを実感しながら力を尽くしています。\r\n\r\n◇リーテイル部門\r\n個人のお客様を中心に保険商品を販売するほか、約5万名もの全国の営業職員、銀行等の販売窓口、来店型店舗「ニッセイライフプラザ」といった販売チャネルのマネジメントも行います。販売チャネルを通していただいたお客様の声から商品開発セクションが保険商品を開発。企画販売セクションが練り上げた販売戦略に基づき営業職員が販売活動を行います。\r\n\r\n◇ホールセール部門\r\n大手企業や官公庁といったお客様に、団体保険や団体年金を中心に、ニーズに合わせたカスタマイズ商品を提案。要望に応じて、融資などの財務取引、不動産事業など多岐にわたる業務も取り扱います。高度な提案力、コンサルティング力、長期的視野に基づいて、総合的なサービスを提供します。\r\n\r\n◇資産運用部門\r\n約66兆円にものぼる総資産を長期にわたって確実に運用し、お客様に還元することが資産運用部門の使命です。財務企画部による資産運用全般に関する企画・立案に基づき、株式、債券、外国証券、融資、不動産といった各セクションが実際に運用します。\r\n\r\n◇海外事業部門\r\n多様な収益機会を取込み、本業を強化する観点から、欧・米・豪・アジア計9カ国に15現地法人・４事業所を配し、保険事業、資産運用、調査、人材交流の４つの分野で海外に展開しています。 また、資産運用収益の向上と保険マーケットの成長機会を取込み、更には、両分野での先進ノウハウの習得を目的とし、欧・米・アジアのトップ企業等とのグローバルなネットワークの構築を進めています。",
+      "profile"           : "当社は、約1184万人の契約者数、約66兆円の総資産（いずれも当社単体2017年度末）等、世界でもトップクラスの水準を誇る、生命保険業界のリーディングカンパニーです。\r\n常に頂点のその先を見つめ、挑戦的な取組みを続けてきました。\r\n頂点に立つからこそ見える厳しい現実も受止め、金融機関としての絶対的な健全性や、それを支える豊富な人材で、１つひとつの問題に対して、信念を持ち、誠実に、そして確実に応えていきたい。我々はこれからも生命保険を通じた「安心」の提供はもちろん、最大級の機関投資家としても経済を支え、そして社会を支えていきます。",
+      "indDesc"           : "個人および企業向け各種保険商品の引受・保全サービス、有価証券投資・貸付・不動産投資など受託資産の運用、付随業務",
+      "hqZipCode"         : "541-8501",
+      "hqAddr"            : "大阪府大阪市中央区今橋3-5-12",
+      "workAddr"          : "&lt;1&gt;国内\r\n支社108\r\n営業部1536\r\nライフプラザ99\r\n代理店16563\r\n総合法人部36\r\n\r\n&lt;2&gt;海外事務所\r\n（ニューヨーク・シカゴ・ボストン・ロンドン・フランクフルト・北京・上海・蘇州・シンガポール・バンコク・ムンバイ・ジャカルタ・メルボルン・シドニー等） \r\n9か国・14現地法人・4事務所 \r\n(2018年12月時点）",
+      "inquiry"           : "【採用データ画面】\r\n『採用問い合わせ先1・2』をご覧ください。",
+      "srchAreaKey"       : "道央/道南/道東/道北/青森/岩手/秋田/宮城/山形/福島/栃木/群馬/埼玉/上越/中越/下越（佐渡含む）/茨城県北・県央/茨城県西・県南・鹿行/千葉/２３区/都下東部/都下西部/山梨/神奈川/静岡県東部/静岡県中部/静岡県西部/北信/東信/中信（木曾含む）/南信/名古屋地区/尾張地区/西三河地区/東三河地区/知多地区/三重北勢/三重中勢/三重南勢/岐阜/富山/石川/福井/京都市内/京都府下/滋賀湖南・湖西/滋賀湖東/滋賀湖北/大阪/和歌山/奈良/神戸/阪神・丹波/播州/但馬/淡路/岡山北部/岡山南部/広島北部/広島南部/山口東部/山口中部/山口西部/鳥取東部/鳥取西部/島根東部/島根西部/島根隠岐/香川東讃/香川西讃/徳島北部/徳島南部/高知東部/高知中部/高知西部/愛媛東予/愛媛中予/愛媛南予/北九州市/福岡市/筑後地区/筑豊地区/その他福岡/佐賀/長崎市/佐世保市/その他長崎/大分/熊本/宮崎/鹿児島/沖縄"
+  }
+  </script>
+															<!-- End aICrawlingData -->
+
+														<script type="text/javascript">
+														
+														var corpName = "日本生命保険相互会社",//企業名
+														    corpCode = "2",//企業コード
+														    corpCategory = $("#companyHead .heading2 > .category > ul > li:first-child > .noLink").text(),//メイン業種
+														    corpOffice = $("#companyHead .heading2 > .place > dl:first-child > dd").text().replace(/\s+/g, ""),//本社所在地
+														    corpURL = "/20/pc/search/corp" + corpCode + "/outline.html",//会社概要URL
+														    $entryBtn = $("#doEntry"),
+														    $seminarBtn = $("#doSeminar").not(".hidden"),
+														    imagePath = "/common/img20/advance/" + corpCode + "-a1-4_ex.jpg",//画像パス
+														    entryStatus,//エントリー状況（both:エントリーセミナー、entry:エントリーのみ、seminar:セミナーのみ、non:なし）
+														    activityIconFlag = $("#displayOutlineForm > div.companyInfo > div.companyMessage.premium > ul > li"), //活動状況アイコン有無
+														    activityIcon, //活動状況
+														    shutokenArray = ["千葉県","東京都","神奈川県"],//首都圏エリア定義
+														    tokaiArray = ["静岡県","岐阜県","愛知県","三重県"],//中部エリア定義
+														    kansaiArray = ["滋賀県","京都府","大阪府","兵庫県","奈良県","和歌山県"],//関西エリア定義
+														    kyushuArray = ["福岡県","佐賀県","長崎県","熊本県","大分県","宮崎県","鹿児島県"],//九州エリア定義
+														    tohokuArray = ["青森県","岩手県","宮城県","秋田県","山形県","福島県"],//東北エリア定義
+														    areaFlagArray = [],
+														    areaPa;
+
+														if($entryBtn.length && $seminarBtn.length){
+														    courseStatus = "both";
+														} else if($entryBtn.length && !($seminarBtn.length)){
+														    courseStatus = "entry";
+														} else if(!($entryBtn.length) && $seminarBtn.length){
+														    courseStatus = "seminar";
+														} else {
+														    courseStatus = "non";
+														}
+														var regionCheck = function(array,length) {
+															while (length--) {
+																if (corpOffice.indexOf(array[length]) !== -1) {
+																	areaPa = "1";
+																	break;
+																} else {
+																	areaPa = "0";
+																}
+															}
+															areaFlagArray.push(areaPa);
+														}
+														regionCheck(shutokenArray,shutokenArray.length);
+														regionCheck(tokaiArray,tokaiArray.length);
+														regionCheck(kansaiArray,kansaiArray.length);
+														regionCheck(kyushuArray,kyushuArray.length);
+														regionCheck(tohokuArray,tohokuArray.length);
+														
+														if(activityIconFlag.length){
+														    var activityIconText = activityIconFlag.text();
+															if(activityIconText == "積極的に受付中"){
+																activityIcon = "CA1";
+															} else if(activityIconText == "最近1ヶ月以内に活動開始"){
+																activityIcon = "CA2";
+															} else if(activityIconText == "追加募集開始"){
+																activityIcon = "CA3";
+															} else if(activityIconText == "受付締切間近"){
+																activityIcon = "CA4";
+															} else if(activityIconText == "エントリー者へ限定案内中"){
+																activityIcon = "CA5";
+															}
+														} else {
+														    activityIcon = "non";
+														}
+														
+														if(corpCode < 1000000){
+															try{
+																_rcmdjp._setItemData({
+																	code: corpCode,
+																	name: corpName,
+																	indcategory: corpCategory,
+																	office: corpOffice,
+																	image: imagePath,
+																	status: courseStatus,
+																	url: corpURL,
+																	outlinestatus: "1",
+																	activity: activityIcon,
+																	shutoken: areaFlagArray[0],
+																	tokai: areaFlagArray[1],
+																	kansai: areaFlagArray[2],
+																	kyushu: areaFlagArray[3],
+																	tohoku: areaFlagArray[4]
+																});
+															} catch(err) {}
+														}
+
+														
+														try{
+														  _rcmdjp._displayRecommend({
+														    type: 'pv',
+														    code: corpCode,
+														    template: 'tracking'
+														    //template: 'pcoutline-rec-book_1'
+														  });
+														} catch(err) {}
+														</script>
+														<script type="text/javascript">
+	if (VMYNAVI === undefined) {
+		var VMYNAVI = {};
+		VMYNAVI.CONST = {};
+		VMYNAVI.CONST.CONTEXT_PATH = "/20/pc";
+		VMYNAVI.CONST.CTOKEN_NAME ='X-CSRF-TOKEN';
+		VMYNAVI.CONST.CTOKEN_VALUE ='9f8a44f1-18c9-4606-a724-bc8a63f1c1d6';
+		VMYNAVI.CONST.STU_NAVI_MYCOM_URL = "https://job.mynavi.jp/conts/2020"
+	};
+</script>
+         <script src="/20/pc/resources/js/common-20190227075249.js" type="text/javascript"></script>
+<script type="text/javascript" src="/20/pc/resources/js/corpinfo-20190227075249.js"></script>
+<script type="text/javascript" src="/20/pc/resources/js/extend-20190227075249.js"></script>
+<script type="text/javascript">
+var hikisuu = location.search;
+if(hikisuu == ""){
+	hikisuu = "none";
+}
+
+//▼Universal Analytics
+ga('send', 'event', 'PageLoad', '会社概要の引数別', hikisuu);
+</script>
+<script type="text/javascript">
+//▼Universal Analytics
+ga('send', 'event', 'PageLoad', '企業ID別(会社概要)', '2');
+</script>
+<script>
+//▼Universal Analytics
+ga('set', 'dimension17', '利用あり');
+ga('send', 'event', 'PageLoad', '利用機能(会社概要)', '利用あり');
+</script>
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=60BSaBy";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=60BSaBy" width="1" height="1"
+ frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+</body>
+</html>
+ -->
